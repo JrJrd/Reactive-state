@@ -1,11 +1,15 @@
 import { DisplayDifficulty } from "./Comp/DisplayDifficulty/DisplayDifficulty";
-import { MenuListItem } from "./Comp/MenuListItem/MenuListItem";
-
-
+import { MenuList } from "./MenuList/MenuList";
+import s from "./style.module.css";
 export function App() {
-   
-    return <div>
-        <MenuListItem difficulty="low" />
-       { /*<DisplayDifficulty difficulty="Low"/> */}
+  return (
+    <div>
+      <hi>title</hi>
+      <div className={s.workspace}>
+        <MenuList />
+
+        <DisplayDifficulty difficulty="Low" />
+      </div>
     </div>
+  );
 }
